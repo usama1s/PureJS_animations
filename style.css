@@ -1,0 +1,44 @@
+body{
+  margin: 0;
+  padding: 0;
+/* height: calc(12 * 100vh); */
+}
+.img-animations-main{
+  /* height: calc(10 * 100vh); */
+}
+.img-animations{
+  width: 70%;
+  margin: auto;
+  position: sticky;
+  top: 0;
+}
+.img-animations div{
+  position: relative;
+  height: 100vh;
+}
+.img-animations img{
+  width: 100%;
+  height: auto;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  opacity: 0;
+}
+
+.dummy-sections{
+  height: calc(2 * 100vh);
+  background: grey;
+}
+.animate-in-this-img{
+  opacity: 1 !important;
+  /* animation: animateIn 1s forwards; */
+}
+@keyframes animateIn {
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}
